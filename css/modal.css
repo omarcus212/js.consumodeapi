@@ -76,6 +76,14 @@
     box-shadow: 0 0 3px var(--primary-color);
 }
 
+.modal-image-container{
+    display: flex;
+    margin-bottom: 5px;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+}
+
 
 .modal-footer{
     background-color: inherit;
@@ -83,7 +91,20 @@
     padding: 0 20px;
 }
 
-@media (max-width:480px){
+#modal-image-input{
+    display: none;
+}
+
+#img-modal{
+    cursor: pointer;
+}
+
+#modal-image-label img{
+    width: 250px;
+    height: 250px;
+}
+
+@media (max-width:610px){
     .modal{
         top:100%;
         transition: all 1s ease;

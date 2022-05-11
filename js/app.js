@@ -51,16 +51,16 @@ const form = document.getElementById('modal-for');
 
 
 
-
-
 const customer = {
 "id": "",
 "nome": document.getElementById('nome').value,
 "email": document.getElementById('email').value,
 "celular" : document.getElementById('celular').value,
-"cidade"  : document.getElementById('cidade').value
+"cidade"  : document.getElementById('cidade').value,
+"foto" : document.getElementById('img-modal').src
 
-}  
+}
+
 if(form.reportValidity()){
 
 
@@ -87,6 +87,7 @@ const fillform = (cliente)=>{
     document.getElementById('email').value= cliente.email,
     document.getElementById('celular').value= cliente.celular,
     document.getElementById('cidade').value= cliente.cidade,
+    document.getElementById('img-modal').src = cliente.foto,
     document.getElementById('nome').dataset.id = cliente.id;
         
       
